@@ -1,0 +1,21 @@
+#Para llamar al modulo
+import Modulosd
+Modulosd3.cn....
+
+#Para llamar un json
+import datetime
+import json
+dici=open("data.json")
+pausar=json.load(dici)
+pausar["ventas"]["comerciales"]
+
+#Para ordenar
+sorted
+
+#Para reescribir en el json:
+with open("data.json", "w") as file:
+    json.dump(pausar, file)
+
+#Buscar cualquier dato
+identificación = int(input)
+if any(int(usuario["id"]) == identificacion for usuario in us_trainer):
