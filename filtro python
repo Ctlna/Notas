@@ -38,3 +38,11 @@ elif rta==2:
                 with open(current_grade_path, 'w', encoding='utf-8') as json_file:
                     json.dump(current_grade, json_file)
                 print(current_grade)
+
+#otro de subir:
+t=pausar["ventas"]["clientes"]
+nuevito=input("Por favor ingrese los siguientes datos separados por comas: id, nombre, apellido, ciudad, categoría\n").split(",")
+t.append(nuevito)
+print(t)
+with open("data.json", "w") as file:
+    json.dump(pausar, file)
