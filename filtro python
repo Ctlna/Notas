@@ -19,3 +19,22 @@ with open("data.json", "w") as file:
 #Buscar cualquier dato
 identificación = int(input)
 if any(int(usuario["id"]) == identificacion for usuario in us_trainer):
+
+#Buscar algo en especifico en json:
+if opcion1=="cursando":
+                    for grado, estudiantes in campersJS["grados"].items():
+                        for estudiante in estudiantes:
+                            if estudiante["estado"].lower() == opcion1:
+                                cursando.append(estudiante)
+#Subir a github:
+elif rta==2:
+                current_grade_path = f"DATA/notas/notas_{group}.json"
+
+                with open(current_grade_path, 'r', encoding='utf-8') as json_file:
+                    current_grade = json.load(json_file)
+                current = current_grade[i]
+                current["practica"] = 0
+
+                with open(current_grade_path, 'w', encoding='utf-8') as json_file:
+                    json.dump(current_grade, json_file)
+                print(current_grade)
